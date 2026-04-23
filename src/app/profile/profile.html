@@ -1,0 +1,23 @@
+<h1 class="text-3xl bg-cyan-300 text-emerald-500 text-center">CUSTOM-COMPONENTS</h1>
+
+<div class="max-w-lg mx-auto   mt-10 p-6 shadow-lg text-shadow-lg bg-amber-200 rounded-lg border-2">
+    <h2 class="text-2xl font-bold mb-4 text-center">
+        User Form
+    </h2>
+    <form>
+        <label>NAME
+            <input type="text" [(ngModel)]="name" name="name" class="w-full p-2 mb-4" placeholder="Enter your name">
+        </label>
+        <label>Email
+            <input type="email" [(ngModel)]="email" name="email" class="w-full p-2 mb-4" placeholder="Enter your name">
+        </label> <label>AGE
+            <input type="text" [(ngModel)]="age" name="age" class="w-full p-2 mb-4" placeholder="Enter your name">
+        </label> <label>PASSWORD
+            <input type="password" [(ngModel)]="password" name="password" class="w-full p-2 mb-4"
+                placeholder="Enter your name">
+        </label>
+        <button type="submit" (click)="submitprofile()" class="bg-amber-500 rounded-lg w-full p-2">SUBMIT</button>
+
+    </form>
+
+</div>
