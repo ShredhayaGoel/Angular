@@ -5,18 +5,43 @@
         User Form
     </h2>
     <form>
-        <label>NAME
+        <label>
+
+            NAME
+
             <input type="text" [(ngModel)]="name" name="name" class="w-full p-2 mb-4" placeholder="Enter your name">
+
         </label>
-        <label>Email
-            <input type="email" [(ngModel)]="email" name="email" class="w-full p-2 mb-4" placeholder="Enter your name">
-        </label> <label>AGE
-            <input type="text" [(ngModel)]="age" name="age" class="w-full p-2 mb-4" placeholder="Enter your name">
-        </label> <label>PASSWORD
-            <input type="password" [(ngModel)]="password" name="password" class="w-full p-2 mb-4"
+
+        <label>
+
+            Email
+
+            <input type="email" [(ngModel)]="email" name="email" autocomplete="email" class="w-full p-2 mb-4"
                 placeholder="Enter your name">
+
         </label>
-        <button type="submit" (click)="submitprofile()" class="bg-amber-500 rounded-lg w-full p-2">SUBMIT</button>
+
+        <label>
+            AGE
+
+            <input type="text" [(ngModel)]="age" name="age" class="w-full p-2 mb-4" placeholder="Enter your name">
+
+        </label>
+
+        <label>
+
+            PASSWORD
+
+            <input type="password" [(ngModel)]="password" name="password" autocomplete="current-password"
+                class="w-full p-2 mb-4" placeholder="Enter your name">
+
+        </label>
+
+        <button type="submit" (click)="submitprofile()" class="bg-amber-500 rounded-lg w-full p-2">
+            SUBMIT
+
+        </button>
 
     </form>
 
