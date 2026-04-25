@@ -19,4 +19,12 @@ export class Counter {
   handleReset() {
     this.count = 0;
   }
+
+  handlevent(event: Event) {
+    console.log('event is working');
+    console.log('functtion called', event.type);
+    console.log('functtion taget', event.target);
+
+    console.log('value', (event.target as HTMLInputElement).value);
+  }
 }
