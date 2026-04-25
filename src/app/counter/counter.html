@@ -23,3 +23,33 @@
 </div>
 <input (input)="handlevent($event)" type="text" name="name" placeholder="Enter value"
     class="border-2 w-full h-15 bg-cyan-200">
+
+<div class="h-200 w-full bg-linear-65 from-cyan-200 to-amber-100">
+
+    <h1 class="text-3xl text-center p-5">{{displayname}}</h1>
+
+    <input (input)="getname($event)" value={{name}} type="text" placeholder="Enter value"
+        class="border-2 h-5 w-100 m-10 p-5 text-2xl bold">
+
+    <!-- <button (click)="getname($event)" class="bg-blue-400 rounded-2xl text-white w-full h-25 border-black border-2">GET
+        NAME </button>-->
+
+    <button (click)="showname($event)"
+        class="bg-blue-400 rounded-2xl text-white w-full h-25 mt-5 border-black border-2">SHOW
+        NAME </button>
+
+    <button (click)="setName()" class="bg-blue-400 rounded-2xl text-white w-full h-25 mt-5 border-black border-2">SET
+        NAME </button>
+
+    <h1 class="text-3xl">Email : {{email}}</h1>
+
+    <input type="text" value={{email}} placeholder="Enter your Email" #emailInput
+        class="border-2 h-5 w-100 m-10 p-5 text-2xl bold">
+
+    <button (click)="getemail(emailInput.value)"
+        class="m-5 bg-orange-400 max-w-full h-25 p-5 rounded-2xl border-amber-600 border-4">GET EMail</button>
+
+    <button (click)="setemail()" class="m-5 bg-orange-400 max-w-full h-25 p-5 rounded-2xl border-amber-600 border-4">SET
+        EMail</button>
+
+</div>
