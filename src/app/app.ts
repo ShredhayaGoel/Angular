@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Login } from './login/login';
 import { Profile } from './profile/profile';
 import { Counter } from './counter/counter';
+import { Ifelse } from './ifelse/ifelse';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Profile, Counter],
+  imports: [Login, Profile, Ifelse, Counter],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
