@@ -4,10 +4,11 @@ import { Login } from './login/login';
 import { Profile } from './profile/profile';
 import { Counter } from './counter/counter';
 import { Ifelse } from './ifelse/ifelse';
+import { Signals } from './signals/signals';
 
 @Component({
   selector: 'app-root',
-  imports: [Login, Profile, Ifelse, Counter],
+  imports: [Login, Profile, Ifelse, Counter, Signals],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
