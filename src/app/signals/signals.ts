@@ -38,4 +38,7 @@ export class Signals {
     this.x1.set(40);
     console.log(this.z());
   }
+  changexvalue() {
+    this.x1.set(10000);
+  }
 }
