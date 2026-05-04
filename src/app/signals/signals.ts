@@ -1,4 +1,4 @@
-import { Component, effect, signal, WritableSignal } from '@angular/core';
+import { Component, computed, effect, signal, WritableSignal } from '@angular/core';
 
 @Component({
   selector: 'app-signals',
@@ -23,10 +23,19 @@ export class Signals {
       console.log(this.count());
     });
   }
-  count2: WritableSignal<number | string> = signal(20);
+  count2: WritableSignal<number> = signal(20);
   updatevalue2() {
     this.count2.set(5040);
-    this.count2.set('hello');
+    //  this.count2.set('hello');
     this.count2.update((val) => val + 1);
+  }
+  x1 = signal(20);
+  y1 = signal(30);
+  z = computed(() => this.x1() + this.y1());
+  changevalue() {
+    console.log(this.z());
+
+    this.x1.set(40);
+    console.log(this.z());
   }
 }
