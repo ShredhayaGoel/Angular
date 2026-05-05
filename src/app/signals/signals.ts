@@ -41,4 +41,6 @@ export class Signals {
   changexvalue() {
     this.x1.set(10000);
   }
+  c = signal(0);
+  displayheading = false;
 }
