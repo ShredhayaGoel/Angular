@@ -1,0 +1,10 @@
+<h1 class="text-3xl bg-pink-300">Contextual for loops types</h1>
+@for(user of users; track user;){
+@if($even)
+{
+<h3 class="text-2xl bg-orange-300">user no {{$index}} and name is {{user}}</h3>
+}
+@if($odd)
+{
+<h3 class="text-2xl bg-cyan-600">user no {{$index}} and name is {{user}}</h3>
+}}
