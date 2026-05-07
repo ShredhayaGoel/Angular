@@ -11,4 +11,21 @@
 
 <h1 class="text-3xl bg-pink-700">Two way binding</h1>
 <input type="text" [(ngModel)]="userName" placeholder="enter your name" class="border-2">
-<h1 class="text-4xl bg-emerald-700 text-white">{{userName}}</h1>
+<h1 class="text-4xl bg-fuchsia-400 text-white">{{userName}}</h1>
+
+<div class="bg-amber-200 h-250 w-full">
+    <h1 class="text-4xl bg-emerald-700 text-white  mt-5 text-center">TO-DO-LIST</h1>
+    <input type="text" [(ngModel)]="task" placeholder="enter your task" class="border-2">
+    <button class="bg-emerald-400 h-10 w-25" (click)="addtask()">add new task</button>
+    @for(task of tasklist; track task.id){
+    <ul>
+        <li class="grid grid-cols-4 gap-5">
+            <span>{{task.id}} </span>
+            <span>{{task.name}} </span>
+            <span>{{task.age}} </span>
+            <button class="bg-emerald-900 text-white mt-1" (click)="deletetask(task.id)">delete</button>
+        </li>
+    </ul>
+    }
+
+</div>
